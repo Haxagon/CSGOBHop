@@ -21,12 +21,12 @@ else:
     sys.exit()
 
 #Modules
-modules = process.list_modules
+modules = process.list_modules()
 while(modules != None):
     var = next(modules)
     if(var[0].name == 'client_panorama.dll'):
         c_dll = var[1]
-        break
+        break;
 
 #LocalPlayer
 local_player = process.read_bytes(c_dll + local_offset,4)
