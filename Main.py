@@ -8,6 +8,7 @@ import os
 local_offset = 0xCF5A4C
 flag_offset = 0x104
 force_jump_offset = 0x51AB48C
+LifeState = 0x25F
 
 #Main Process
 window = win32gui.FindWindow(0, ('Counter-Strike: Global Offensive'))
@@ -39,7 +40,8 @@ while(win32api.GetKeyState(0x65) == key):
     while(win32api.GetKeyState(0x20) == -128 or win32api.GetKeyState(0x20) == -127):
           flag = process.read_int(local_player + flag_offset)
           if(flag == 256):
-              process.write_int(c_dll + force_jump_offset, 4)
+              if(LifeState == '1' or == '2')
+                process.write_int(c_dll + force_jump_offset, 4)
           else:
               process.write_int(c_dll + force_jump_offset, 5)
 
