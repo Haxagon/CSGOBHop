@@ -41,7 +41,7 @@ while(win32api.GetKeyState(0x65) == key):
           flag = process.read_int(local_player + flag_offset)
           if(flag == 256):
             Life = process.read_int(LifeState + local_offset)
-            if(LifeState == 1 or 2)
+            if(LifeState == 1 or 2):
                 process.write_int(c_dll + force_jump_offset, 4)
           else:
               process.write_int(c_dll + force_jump_offset, 5)
