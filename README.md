@@ -16,3 +16,13 @@ Prerequisites:
 Credit to:
   HazeDumper
   All of the Developers of the Modules used.
+  
+  
+  
+  
+  
+  
+  
+  
+  ADDED NOTE:
+  I don't intend to add any functions other than the bhopping. I will keep all other versions private.
