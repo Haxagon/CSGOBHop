@@ -1,22 +1,19 @@
 # CSGO Bhop Script.
 
-Prerequisites:
-  PyWin32 (api, process and gui)
-  PyMem
-  OS
-  Sys
+Prerequisites:</br>
+  PyWin32 (api, process and gui)</br>
+  PyMem</br>
+  OS</br>
+  Sys</br>
 
-  You will also need to edit your PyMem process.py with the following changes:
+  You will also need to edit your PyMem process.py with the following changes:</br>
+  yield [module_info,hModule] - Line 335</br>
+  return [module_info,hModules[0]] - Line 119</br>
   
   
-  yield [module_info,hModule] - Line 335
-  return [module_info,hModules[0]] - Line 119
-  
-  
-Credit to:
-  HazeDumper
-  All of the Developers of the Modules used.
-  
+Credit to:</br>
+  HazeDumper</br>
+  All of the Developers of the Modules used.</br>
   
   
   
@@ -24,5 +21,5 @@ Credit to:
   
   
   
-  ADDED NOTE:
-  I don't intend to add any functions other than the bhopping. I will keep all other versions private.
+  ADDED NOTE:</br>
+  I don't intend to add any functions other than the bhopping. I will keep all other versions private.</br>
